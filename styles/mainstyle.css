@@ -1,0 +1,110 @@
+* {
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    position: relative;
+}
+
+.menu, footer {
+    background-color: #393939;
+    font-size: 13pt;
+}
+
+.menubar {
+    margin: 0 20.5%;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.menufield {
+    margin-right: 5px;
+}
+
+.menufield:last-child {
+    margin-right: 0;
+}
+
+.menufield .menulink {
+    display: block;
+    margin: 3px 0;
+    padding: 15px;
+    border: 2px solid gray;
+    border-radius: 17px;
+    color: black;
+    text-decoration: none;
+}
+
+
+.menufield .menulink {
+    background-color: gray;
+    font-weight: bold;
+}
+
+body ,.menufield .menulink:hover {
+    background-color: lightgray;
+}
+
+.menufield .menulink:active {
+    background-color: darkgray;
+}
+
+#reservefield .menulink {
+    background-color: #54130e;
+    border-color: black;
+}
+
+#reservefield .menulink:hover {
+    background-color: #7c170f;
+}
+
+#reservefield .menulink:active {
+    background-color: #6e140f;
+}
+
+.headerimagebar {
+}
+
+.headerimage {
+    width: 60%;
+}
+
+.headerimage, main {
+    margin: 0 20%;
+}
+
+main {
+    background-color: whitesmoke;
+    margin-top: -5px;
+}
+
+.headmain {
+    height: 75px;
+    margin: 0 2.5%;
+}
+
+.title {
+    font-size: 24pt;
+    margin-top: 10px;
+}
+
+.searchbar {
+    margin-top: 25px;
+}
+
+.icon {
+    margin-top: 1px;
+    margin-left: 4px;
+    width: 15px;
+}
+
+.title, .menufield {
+    float: left;
+}
+
+.searchbar, .icon, .menufield:last-child {
+    float: right;
+}
+
