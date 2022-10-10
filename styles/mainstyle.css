@@ -3,21 +3,24 @@
     padding: 0;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     position: relative;
 }
 
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 a {
-
     text-decoration: none;
 }
 
-.menu, footer {
+.menu,
+footer {
     background-color: #393939;
     font-size: 13pt;
 }
@@ -49,13 +52,19 @@ a {
 .menufield .menulink {
     background-color: gray;
 }
-.menufield .menulink, .title, .articletitle {
+.menufield .menulink,
+.title,
+.articletitle {
     font-weight: bold;
 }
 
-
-body ,.menufield .menulink:hover {
+body,
+.menufield .menulink:hover {
     background-color: lightgray;
+}
+
+.menufield .menulink {
+    transition: 500ms;
 }
 
 .menufield .menulink:active {
@@ -75,20 +84,13 @@ body ,.menufield .menulink:hover {
     background-color: #6e140f;
 }
 
-.headerimagebar {
-}
-
 .headerimage {
     width: 60%;
 }
 
-.headerimage, main {
-    margin: 0 20%;
-}
-
+.headerimage,
 main {
-    background-color: whitesmoke;
-    margin-top: -5px;
+    margin: 0 20%;
 }
 
 .headmain {
@@ -105,17 +107,28 @@ main {
     margin-top: 25px;
 }
 
+input:focus {
+    outline: 1px dotted;
+}
+
 .iconsearch {
     margin-top: 1px;
     margin-left: 4px;
     width: 15px;
 }
 
-.title, .menufield, .articletitle {
+.title,
+.menufield,
+.articletitle {
     float: left;
 }
 
-.searchbar, .icon, .menufield:last-child, .articledate, .articleauthor {
+.searchbar,
+.icon,
+.menufield:last-child,
+.articledate,
+.articleauthor,
+.copyright {
     float: right;
 }
 
@@ -126,7 +139,6 @@ main {
 article {
     background-color: #e2e2e2;
     border-radius: 10px 10px 0 0;
-    margin: 5px;
     padding: 10px;
 }
 
@@ -135,13 +147,15 @@ article {
     margin-left: 7px;
 }
 
-.articledate, .articleauthor, .articlemore a {
+.articledate,
+.articleauthor,
+.articlemore a {
     color: gray;
 }
 
 .articletext {
     font-size: 13pt;
-    margin: 30px 0 15px 0;
+    margin: 45px 0 15px 0;
 }
 
 article .articleauthor {
@@ -149,8 +163,54 @@ article .articleauthor {
 }
 
 footer {
-    position: relative;
     bottom: 0;
     width: 100%;
-    top: unset;
+}
+
+.copyright {
+    margin: 0 20.5%;
+}
+
+.articles {
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+    grid-template-columns: auto;
+}
+
+@media only screen and (max-width: 550px) {
+
+}
+
+@media only screen and (max-width: 899px) {
+    .menubar,
+    .copyright {
+        margin: 0 5px;
+    }
+
+    .headerimage {
+        width: 100%;
+    }
+
+    .headerimage,
+    main {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .articles {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 999px) {
+    .articles {
+        grid-template-columns: auto;
+    }
+}
+
+main {
+    background-color: whitesmoke;
+    margin-top: -5px;
 }
