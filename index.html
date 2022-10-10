@@ -3,39 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="300">
 
         <title>Internáty</title>
         <link rel="stylesheet" href="styles/mainstyle.css" type="text/css">
+
+        <script src="scripts/burgermenu.js"></script>
     </head>
     <body>
         <!--Header-->
-        <!--TODO: burger pri max velkosti 550px-->
         <header>
             <!--Menu-->
             <div class="menu">
+                <!--Burgermenu-->
+                <div class="iconburger" onclick="burgermenuFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
                 <!--Menubar-->
-                <ul class="menubar">
-                    <li class="menufield">
-                        <a class="menulink" href="index.html" title="domov">Oznamy</a>
-                    </li>
+                <div id="menubarlinks">
+                    <ul class="menubar">
+                        <li class="menufield">
+                            <a class="menulink" href="index.html" title="domov">Oznamy</a>
+                        </li>
 
-                    <li class="menufield">
-                        <a class="menulink" href="informacie.html" title="informácie">Základné informácie</a>
-                    </li>
+                        <li class="menufield">
+                            <a class="menulink" href="informacie.html" title="informácie">Základné informácie</a>
+                        </li>
 
-                    <li class="menufield">
-                        <a class="menulink" href="kontakty.html" title="kontakt">Kontakty</a>
-                    </li>
+                        <li class="menufield">
+                            <a class="menulink" href="kontakty.html" title="kontakt">Kontakty</a>
+                        </li>
 
-                    <li class="menufield" id="reservefield">
-                        <a class="menulink" href="index.html" title="rezervácia">Rezervácia</a>
-                    </li>
-                </ul>
+                        <li class="menufield" id="reservefield">
+                            <a class="menulink" href="index.html" title="rezervácia">Rezervácia</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <!--Header image-->
             <!--TODO: striedanie obrazkov a ich prepinanie-->
             <div class="headerimagebar">
-                <img class="headerimage" src="pictures/headerpicture.jpg" alt="error">
+                <img class="headerimage" src="pictures/headerpicture.jpg" alt="error" loading="lazy">
             </div>
         </header>
 
@@ -52,7 +63,7 @@
                         <label>
                             <input type="text" placeholder="Hladať...">
                         </label>
-                        <img class="iconsearch" src="https://www.seekpng.com/png/detail/958-9588716_buscar-buscarlogo-buscador-lupalogo-lupa-search-icon-search.png" alt="error">
+                        <img class="iconsearch" src="https://www.seekpng.com/png/detail/958-9588716_buscar-buscarlogo-buscador-lupalogo-lupa-search-icon-search.png" alt="error" loading="lazy">
                     </div>
                 </div>
 
