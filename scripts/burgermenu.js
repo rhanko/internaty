@@ -1,8 +1,7 @@
 function burgermenuFunction(y) {
-    x = document.getElementById("menubarlinks");
-
     y.classList.toggle("change");
 
+    let x = document.getElementById("menubarlinks");
     if (x.style.display === "block") {
         x.style.display = "";
 
