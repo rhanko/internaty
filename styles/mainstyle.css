@@ -52,6 +52,10 @@ footer {
     color: black;
 }
 
+#reservefield .menulink {
+    color: rgba(207, 208, 214, 0.61);
+}
+
 
 .menufield .menulink {
     background-color: gray;
